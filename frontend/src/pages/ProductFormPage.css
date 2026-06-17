@@ -1,0 +1,184 @@
+/* frontend/src/pages/ProductFormPage.css */
+
+.form-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #0f1117;
+}
+
+.form-main {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  max-width: 860px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.breadcrumb-link { color: #666; text-decoration: none; transition: color 0.15s; }
+.breadcrumb-link:hover { color: #c9a96e; }
+.breadcrumb-sep { color: #444; }
+
+.form-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0ece4;
+  margin-bottom: 4px;
+}
+
+.form-sub {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.product-form {
+  background: #16181f;
+  border: 1px solid #24262e;
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.full-width { grid-column: 1 / -1; }
+
+.form-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.form-input {
+  background: #1a1c24;
+  border: 1px solid #2a2c36;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #e8e6e0;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.form-input::placeholder { color: #444; }
+.form-input:focus { border-color: #c9a96e; background: #1e2028; }
+
+.form-textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.form-select option { background: #1a1c24; color: #e8e6e0; }
+
+.input-error { border-color: #5c2a2a !important; background: #1e1414 !important; }
+.error-msg { font-size: 12px; color: #e05a5a; margin-top: 2px; }
+.field-hint { font-size: 11px; color: #555; }
+
+/* ── Image preview ── */
+.img-preview-wrap {
+  margin-top: 10px;
+}
+
+.img-preview-label {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.img-preview {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #2a2c36;
+  display: block;
+}
+
+/* ── Checkbox ── */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 12px 14px;
+  background: #1a1c24;
+  border: 1px solid #2a2c36;
+  border-radius: 8px;
+  transition: border-color 0.15s;
+}
+
+.checkbox-label:hover { border-color: #c9a96e; }
+.checkbox-input { width: 16px; height: 16px; accent-color: #c9a96e; cursor: pointer; }
+.checkbox-text { font-size: 13px; color: #aaa; }
+
+/* ── Actions ── */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 1.25rem;
+  border-top: 1px solid #24262e;
+}
+
+.btn-cancel {
+  background: #1e2028;
+  border: 1px solid #2a2c36;
+  color: #888;
+  padding: 11px 24px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.btn-cancel:hover { background: #24262e; color: #ccc; }
+
+.btn-save {
+  background: #c9a96e;
+  color: #1a1a1a;
+  border: none;
+  padding: 11px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-save:hover:not(:disabled) { background: #b8944f; }
+.btn-save:disabled { opacity: 0.6; cursor: not-allowed; }
+.form-loading { color: #555; padding: 4rem; text-align: center; }
+
+@media (max-width: 640px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .full-width { grid-column: 1; }
+  .form-main { padding: 1rem; }
+}

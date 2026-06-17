@@ -1,0 +1,48 @@
+/* src/components/StatCard.css */
+
+.stat-card {
+  background: #16181f;
+  border: 1px solid #24262e;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icon background colors per accent */
+.accent-gold   .stat-icon { background: #2a2318; }
+.accent-blue   .stat-icon { background: #0d1a2a; }
+.accent-green  .stat-icon { background: #0d1f14; }
+.accent-red    .stat-icon { background: #2a0e0e; }
+
+.stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f0ece4;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* Accent colors for the value number */
+.accent-gold  .stat-value { color: #c9a96e; }
+.accent-blue  .stat-value { color: #6ea8fe; }
+.accent-green .stat-value { color: #5cb85c; }
+.accent-red   .stat-value { color: #e05a5a; }
+
+.stat-title {
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.04em;
+}

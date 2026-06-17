@@ -1,0 +1,65 @@
+/* src/components/ProductGrid.css */
+
+.product-section {
+  padding: 2.5rem 2rem;
+  background: #f9f8f6;
+}
+
+/* ── Section Header ── */
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.section-title {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.section-count {
+  font-size: 13px;
+  color: #999;
+}
+
+/* ── Category Strip ── */
+.category-strip {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cat-btn {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 7px 18px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.15s;
+  letter-spacing: 0.02em;
+}
+
+.cat-btn:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+
+.cat-btn.active {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ── Product Grid ── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}

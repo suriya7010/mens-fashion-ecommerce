@@ -1,0 +1,91 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.nav-logo {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.nav-logo span {
+  font-weight: 400;
+  color: #888;
+}
+
+/* Nav link list */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 13px;
+  color: #888;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-link:hover {
+  color: #1a1a1a;
+}
+
+/* Active link — highlighted with gold underline */
+.nav-link.active {
+  color: #1a1a1a;
+  border-bottom-color: #c9a96e;
+  font-weight: 500;
+}
+
+/* Right-side icon buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-icon-btn {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Red badge on cart icon */
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 9px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}

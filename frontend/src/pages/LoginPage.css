@@ -1,0 +1,295 @@
+/* src/pages/LoginPage.css */
+
+.login-page {
+  min-height: 100vh;
+  background: #f9f8f6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top bar ── */
+.login-topbar {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.login-logo {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.login-logo span {
+  font-weight: 400;
+  color: #888;
+}
+
+/* ── Two-column container ── */
+.login-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 960px;
+  margin: 3rem auto;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* ── Left panel (decorative) ── */
+.login-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  background: #1a1a1a;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.login-tagline-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 1.25rem;
+}
+
+.login-tagline {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #f0ece4;
+  margin-bottom: 1.5rem;
+}
+
+.login-tagline em {
+  font-style: italic;
+  color: #c9a96e;
+}
+
+.login-sub {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.8;
+}
+
+/* ── Right panel (form card) ── */
+.login-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 14px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-family: 'Georgia', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.login-welcome {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.register-link {
+  color: #c9a96e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Error message ── */
+.login-error {
+  background: #fff0f0;
+  color: #c0392b;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid #f5c6cb;
+}
+
+/* ── Form ── */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.form-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s;
+  background: #fff;
+}
+
+.form-input:focus {
+  border-color: #1a1a1a;
+}
+
+.form-input::placeholder {
+  color: #ccc;
+}
+
+.forgot-link {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: none;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.forgot-link:hover {
+  color: #1a1a1a;
+}
+
+/* ── Login button ── */
+.login-btn {
+  width: 100%;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: inherit;
+  margin-top: 0.25rem;
+  transition: background 0.15s;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #333;
+}
+
+.login-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* ── Divider ── */
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 1.25rem 0;
+  color: #ddd;
+  font-size: 12px;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e8e8e8;
+}
+
+.login-divider span {
+  color: #bbb;
+}
+
+/* ── Google button ── */
+.google-btn {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 7px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.google-btn:hover {
+  background: #f9f9f9;
+  border-color: #bbb;
+}
+
+.google-icon {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+/* ── Bottom links ── */
+.back-to-shop {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 1.25rem;
+}
+
+.back-link {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+  }
+  .login-left {
+    display: none; /* hide decorative panel on mobile */
+  }
+}

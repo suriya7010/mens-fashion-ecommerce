@@ -1,0 +1,92 @@
+/* src/components/Hero.css */
+
+.hero {
+  background: #1a1a1a;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 400px;
+}
+
+.hero-left {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  color: #f0ece4;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: #c9a96e;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 360px;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: #c9a96e;
+  color: #1a1a1a;
+  border: none;
+  padding: 14px 28px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 2px;
+}
+
+.hero-cta:hover {
+  background: #b8944f;
+}
+
+.hero-right {
+  background: #2a2520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-icon {
+  font-size: 120px;
+  opacity: 0.4;
+}
+
+.hero-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #c9a96e;
+  color: #1a1a1a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

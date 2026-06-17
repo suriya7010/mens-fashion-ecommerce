@@ -1,0 +1,169 @@
+/* src/components/OrderSummary.css */
+
+.order-summary {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  /* Sticky so it stays visible while scrolling the cart list */
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.summary-title {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ── Price rows ── */
+.summary-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Green text for free shipping */
+.summary-row.free span {
+  color: #2a7a4f;
+  font-weight: 500;
+}
+
+/* Green text for discount */
+.discount-row span {
+  color: #2a7a4f;
+  font-weight: 500;
+}
+
+/* Total row — bigger and bolder */
+.total-row {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.total-row span {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* ── Free shipping hint ── */
+.free-shipping-hint {
+  font-size: 12px;
+  color: #c9a96e;
+  background: #fdf8ef;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ── Promo code section ── */
+.promo-section {
+  margin-bottom: 1.25rem;
+}
+
+.promo-row {
+  display: flex;
+  gap: 8px;
+}
+
+.promo-input {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 12px;
+  outline: none;
+  font-family: inherit;
+  color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+.promo-input:focus {
+  border-color: #1a1a1a;
+}
+
+.promo-btn {
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  border-radius: 6px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.promo-btn:hover {
+  background: #f7f5f2;
+}
+
+.promo-message {
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.promo-message.success {
+  background: #f0faf4;
+  color: #2a7a4f;
+}
+
+.promo-message.error {
+  background: #fff0f0;
+  color: #e05a5a;
+}
+
+/* ── Checkout button ── */
+.checkout-btn {
+  width: 100%;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.checkout-btn:hover:not(:disabled) {
+  background: #333;
+}
+
+/* Disabled state when cart is empty */
+.checkout-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ── Secure note ── */
+.secure-note {
+  text-align: center;
+  font-size: 11px;
+  color: #bbb;
+  margin-top: 10px;
+}
