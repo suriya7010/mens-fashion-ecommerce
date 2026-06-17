@@ -1,6 +1,4 @@
-// src/components/StatCard.jsx
-// A single stat card shown at the top of the dashboard.
-// Props: title, value, icon, accent (color class)
+
 
 import React from "react";
 import "./StatCard.css";

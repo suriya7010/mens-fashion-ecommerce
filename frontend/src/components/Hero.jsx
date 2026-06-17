@@ -1,9 +1,3 @@
-// src/components/Hero.jsx
-// ─────────────────────────────────────────────
-// The big banner section at the top of the page.
-// No props needed here — it's purely visual.
-// ─────────────────────────────────────────────
-
 import React from "react";
 import "./Hero.css";
 

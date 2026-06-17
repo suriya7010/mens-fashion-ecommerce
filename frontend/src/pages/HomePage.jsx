@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import { fetchProducts } from "../services/api";
+import Footer from "../components/Footer";
 import "./HomePage.css";
 
 const CATEGORIES = ["All", "Suits", "Shirts", "Trousers", "Shoes", "Accessories", "Ties"];
@@ -159,7 +160,11 @@ function HomePage({ cartCount, onAddToCart }) {
           </div>
         )}
       </section>
+
+      <Footer/>
+      
     </div>
+     
   );
 }
 

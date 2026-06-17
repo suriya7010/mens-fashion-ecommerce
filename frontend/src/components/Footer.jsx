@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-brand">
-          <p className="footer-logo">SARTO &amp; CO.</p>
+          <p className="footer-logo">SIVA Outfits</p>
           <p className="footer-tagline">Dressed for every occasion.</p>
         </div>
         <div className="footer-links">
@@ -29,7 +29,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2025 Sarto &amp; Co. All rights reserved.</p>
+        <p>© 2026 SIVA &amp; Outfits All rights reserved.</p>
       </div>
     </footer>
   );
